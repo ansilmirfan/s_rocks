@@ -18,7 +18,7 @@ class SvgImage extends StatelessWidget {
     super.key,
     required this.assetPath,
     this.boxFit = BoxFit.fill,
-    this.color = Colors.white,
+    this.color,
     this.height,
   });
 
