@@ -14,7 +14,7 @@ class AppColorScheme {
     onSecondary: AppColors.white,
 
     /// Surface
-    surface: AppColors.transperent,
+    surface: AppColors.black,
     onSurface: AppColors.white,
 
     /// Error for validation
