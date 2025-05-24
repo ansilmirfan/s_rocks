@@ -31,6 +31,7 @@ final List<BottomNavItem> bottomNavItems = [
     label: "Projects",
   ),
 ];
+//List of widget for each bottomnav item
 List<Widget> children = List.generate(
   4,
   (index) => index == 0 ? Home() : SizedBox(),
@@ -54,7 +55,7 @@ class _BottomNavState extends State<BottomNav> {
       clipBehavior: Clip.hardEdge,
       decoration: BoxDecoration(
         color: AppColors.black,
-        border: Border(top: BorderSide(color: AppColors.grey, width: 0.5)),
+        border: Border(top: BorderSide(color: AppColors.grey, width: 1)),
         borderRadius: const BorderRadius.vertical(top: Radius.circular(10)),
       ),
       child: Row(
