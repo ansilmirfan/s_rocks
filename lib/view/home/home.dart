@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:s_rocks/utils/extensions/space_extension.dart';
+import 'package:s_rocks/view/home/widgets/promo_card.dart';
 import 'package:s_rocks/view/home/widgets/search_field.dart';
 import 'package:s_rocks/view/widgets/svg_image.dart';
 
@@ -8,7 +9,14 @@ class Home extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(body: CustomScrollView(slivers: [_buildAppBar(context)]));
+    return Scaffold(
+      body: CustomScrollView(
+        slivers: [
+          _buildAppBar(context),
+          SliverList(delegate: SliverChildListDelegate([PromoCard()])),
+        ],
+      ),
+    );
   }
 
   SliverAppBar _buildAppBar(BuildContext context) {
