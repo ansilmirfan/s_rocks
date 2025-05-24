@@ -49,14 +49,18 @@ class SearchField extends StatelessWidget {
   Widget _buildSuffixIcon() {
     return UnconstrainedBox(
       child: Row(
-        spacing: 15,
+        spacing: 8,
         children: [
           Text(
             "|",
-            style: TextStyle(fontSize: 30, fontWeight: FontWeight.w100),
+            style: TextStyle(
+              fontSize: 25,
+              fontWeight: FontWeight.w100,
+              color: AppColors.grey,
+            ),
           ),
-          SvgImage(assetPath: "assets/images/icons/mic.svg", height: 20),
-          1.0.w, // Spacing
+          SvgImage(assetPath: "assets/images/icons/mic.svg", height: 23),
+          5.0.w, //spacing
         ],
       ),
     );
