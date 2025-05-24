@@ -6,8 +6,8 @@ class SvgImage extends StatelessWidget {
   ///required asset path
   final String assetPath;
 
-  ///optional color(default color is white)
-  final Color color;
+  ///optional color
+  final Color? color;
 
   ///optional BoxFit(default value is [BoxFit.fill])
   final BoxFit boxFit;
@@ -30,7 +30,8 @@ class SvgImage extends StatelessWidget {
       height: height,
       width: height,
 
-      colorFilter: ColorFilter.mode(color, BlendMode.srcIn),
+      colorFilter:
+          color == null ? null : ColorFilter.mode(color!, BlendMode.srcIn),
     );
   }
 }
