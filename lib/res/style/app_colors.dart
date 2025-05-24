@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
 
 class AppColors {
+  ///Primary color for appbar
+  static Color primary = Color(0xFFA90140);
+
   ///Used in secondary text or unselected icon color
   static Color grey = Color(0xFF61616B);
 
