@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:s_rocks/models/music_service_model.dart';
 import 'package:s_rocks/res/style/app_colors.dart';
 import 'package:s_rocks/res/style/radius.dart';
+import 'package:s_rocks/utils/extensions/route_extension.dart';
+import 'package:s_rocks/view/view_page/view_page.dart';
 import 'package:s_rocks/view/widgets/svg_image.dart';
 
 /// Takes a [MusicServiceModel] which holds all necessary data for rendering.
@@ -34,7 +36,9 @@ class MusicServiceTile extends StatelessWidget {
 
         // Main content of the tile
         child: ListTile(
-          onTap: () {},
+          onTap: () {
+            context.push(ViewPage(text: model.title));
+          },
 
           // Spacing inside the tile
           contentPadding: EdgeInsets.symmetric(horizontal: 10, vertical: 2),
