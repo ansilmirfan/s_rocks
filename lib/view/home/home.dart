@@ -13,8 +13,26 @@ class Home extends StatelessWidget {
       body: CustomScrollView(
         slivers: [
           _buildAppBar(context),
-          SliverList(delegate: SliverChildListDelegate([PromoCard()])),
+          SliverList(
+            delegate: SliverChildListDelegate([
+              PromoCard(),
+              _buildText(context),
+            ]),
+          ),
         ],
+      ),
+    );
+  }
+
+  SizedBox _buildText(BuildContext context) {
+    return SizedBox(
+      height: 80,
+      child: Center(
+        child: Text(
+          "Hire  hand-picked Pros for popular music services",
+          style: Theme.of(context).textTheme.bodyLarge,
+          textAlign: TextAlign.center,
+        ),
       ),
     );
   }
