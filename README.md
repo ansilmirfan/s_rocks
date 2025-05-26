@@ -18,13 +18,15 @@ A new Flutter project.
 
 ## 🖼️Preview
 
-![App Screenshot](assets/images/s-rcoks-screenshot.png)
+<img src="assets/images/s-rcoks-screenshot.png" alt="App Screenshot" width="500"/>
 
 ---
 
 ## 🎬 Demo Video
 
-[![Watch the demo](assets/images/s-rcoks-screenshot.png)](assets/video/s-rocks-video.webm)
+<a href="https://drive.google.com/file/d/1HnnXAgIdbnNRg6DwWFP_W8RgVMoP01p8/view?usp=sharing">
+  <img src="assets/images/s-rcoks-screenshot.png" alt="Watch Demo Video" width="200"/>
+</a>
 
 ---
 
