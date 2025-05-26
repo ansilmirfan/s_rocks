@@ -59,7 +59,6 @@ class Home extends StatelessWidget {
       child: Center(
         child: Text(
           "Hire  hand-picked Pros for popular music services",
-          style: Theme.of(context).textTheme.bodyLarge,
           textAlign: TextAlign.center,
         ),
       ),

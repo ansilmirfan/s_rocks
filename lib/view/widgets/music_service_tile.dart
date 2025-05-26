@@ -52,10 +52,10 @@ class MusicServiceTile extends StatelessWidget {
           leading: SvgImage(height: 55, assetPath: model.leadingIconPath),
 
           // Title text
-          title: Text(model.title, style: TextStyle(fontSize: 19)),
+          title: Text(model.title, style: TextStyle(fontSize: 17)),
 
           //Description text or subtitle
-          subtitle: Text(model.description),
+          subtitle: Text(model.description, style: TextStyle(fontSize: 13)),
 
           // Arrow icon on the right
           trailing: Icon(Icons.arrow_right_outlined, size: 35),

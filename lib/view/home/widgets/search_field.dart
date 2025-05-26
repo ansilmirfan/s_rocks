@@ -16,6 +16,7 @@ class SearchField extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return TextField(
+      onTapOutside: (_) => FocusScope.of(context).unfocus(),
       decoration: InputDecoration(
         hintText: 'Search "Punjabi Lyrics"',
         hintStyle: TextStyle(color: AppColors.grey),

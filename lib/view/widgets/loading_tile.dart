@@ -7,7 +7,7 @@ class LoadingTile extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 5),
+      padding: const EdgeInsets.symmetric(horizontal: 10),
       child: ListTile(
         leading: ShimmerWidget(height: 50, width: 50),
         title: ShimmerWidget(height: 15, width: 50),

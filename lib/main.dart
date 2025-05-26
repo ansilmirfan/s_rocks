@@ -23,7 +23,11 @@ class MyApp extends StatelessWidget {
     return ChangeNotifierProvider(
       create: (context) => Injector.getIt<MusicServiceViewModel>()..getAll(),
 
-      child: MaterialApp(theme: AppTheme.themeData, home: SplashScreen()),
+      child: MaterialApp(
+        debugShowCheckedModeBanner: false,
+        theme: AppTheme.themeData,
+        home: SplashScreen(),
+      ),
     );
   }
 }
