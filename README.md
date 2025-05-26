@@ -2,15 +2,89 @@
 
 A new Flutter project.
 
-## Getting Started
+---
 
-This project is a starting point for a Flutter application.
+### Packages used
 
-A few resources to get you started if this is your first Flutter project:
+| Packages          | Description                                    |
+| ----------------- | ---------------------------------------------- |
+| 'firebase_core '  | For initialising the application with firebase |
+| 'cloud_firestore' | For accessing cloud in firebase                |
+| 'get_it'          | For dependency injection                       |
+| 'provider'        | For state management                           |
+| 'shimmer'         | For loading shimmer effect                     |
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+---
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## 🖼️Preview
+
+![App Screenshot](assets/images/s-rcoks-screenshot.png)
+
+---
+
+## 🎬 Demo Video
+
+[![Watch the demo](assets/images/s-rcoks-screenshot.png)](assets/video/s-rocks-video.webm)
+
+---
+
+## 📁 Folder Structure
+
+--bash
+
+<pre>
+s_rocks/
+│
+├── assets/                         # Contains static assets used in the app
+│   ├── fonts/                      # Custom fonts
+│   ├── images/                     # Image assets
+│   │   ├── .../                    # Other image files
+│   │   └── icons/                  # Icons used in the app
+│
+├── lib/                            # Main application source code
+│   ├── core/                       # Core setup and utilities shared across the app
+│   │   └── dependency_injection/   # Handles dependency injection setup
+│   │       └── injector.dart       # Initializes and provides dependencies
+│
+│   ├── data/                       # Data layer for external services
+│   │   └── firebase_services.dart  # Handles Firebase CRUD operations
+│
+│   ├── models/                     # Data models used throughout the app
+│   │   └── music_service_model.dart # Model representing a music service
+│
+│   ├── res/                        # App resources like styles and constants
+│   │   ├── constants/              # Application-wide constant values
+│   │   └── style/                  # Styling (colors, themes, radius, etc.)
+│   │       ├── app_colors.dart     # Color definitions
+│   │       ├── app_text_theme.dart # Text theme styles
+│   │       ├── app_theme.dart      # ThemeData 
+│   │       ├── color_scheme.dart   # Color scheme 
+│   │       └── radius.dart         # Border radius 
+│   ├── res/
+│   │   └── firebase_repository.dart # Repository pattern implementation for Firebase
+│
+│   ├── utils/                      # Utility classes and extensions
+│   │   └── extensions/             # Custom Dart extension methods
+│   │       ├── route_extension.dart # Extension for route navigation
+│   │       └── space_extension.dart # Extension for spacing widgets
+│
+│   ├── view/                       # UI components/screens
+│   │   ├── bottom_nav/             # Bottom navigation-related widgets
+│   │   │   ├── widgets/            # Widgets specific to bottom nav
+│   │   │   └── bottom_nav.dart     # Bottom navigation bar widget
+│   │   ├── home/                   # Home screen
+│   │   │   ├── widgets/            # Home screen-specific widgets
+│   │   │   └── home.dart           # Home screen layout
+│   │   ├── splash_screen/          # Splash screen
+│   │   │   └── splash_screen.dart  # Splash screen widget
+│   │   ├── view_page/              # View page screen
+│   │   │   └── view_page.dart      # View page layout
+│   │   └── widgets/                # Shared or global UI widgets
+│
+│   ├── view_model/                 # View models for state management (Provider)
+│   │   └── music_service_view_model.dart # Logic for managing music service UI state
+│
+│   └── main.dart                   # App entry point
+</pre>
+
+---
