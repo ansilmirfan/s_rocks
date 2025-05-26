@@ -18,7 +18,7 @@ A new Flutter project.
 
 ## 🖼️Preview
 
-<img src="assets/images/s-rcoks-screenshot.png" alt="App Screenshot" width="500"/>
+<img src="assets/images/s-rcoks-screenshot.png" alt="App Screenshot" width="350"/>
 
 ---
 
